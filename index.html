@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổ đầy hình tròn theo kim đồng hồ</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    user-select: none;
+}
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #9A7E6F;
+    justify-content: center;
+}
+.navbar{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    transform: translateY(-50%);
+    top: 50%;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    position: absolute;
+}
+.nav li{
+    padding: 2.5vw 0px;
+    width: 22vw;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    background: #54473F;
+    font-size: 3vw;
+    border-radius: 0 0 4px 4px;
+}
+.nav2{
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    list-style: none;
+    transform-style: preserve-3d;
+    perspective: 5000px;
+}
+.nav2 li{
+    text-align: center;
+    width:22vw;
+    transform-style: preserve-3d;
+    transition: 0.2s linear;
+    padding: 2.5vw 0px;
+    font-weight: 700;
+    background: #E9EED9;
+    font-size: 3vw;
+    border-radius: 0 0 4px 4px;
+}
+.nav2 li:hover{
+    transform: rotateX(90deg);
+    translate: 0 -51%;
+}
+</style>
+<body>
+    <div class="navbar">
+        <ul class="nav">
+            <li>Trang chu</li>
+            <li>Luyen tap</li>
+            <li>Thi dau</li>
+            <li>Lien he</li>
+        </ul>
+        <ul class="nav2">
+            <li>Trang chu</li>
+            <li>Luyen tap</li>
+            <li>Thi dau</li>
+            <li>Lien he</li>
+        </ul>
+    </div>
+</body>
+</html>
